@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(fonts/texgyrepagella-regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(fonts/texgyrepagella-bold.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(fonts/texgyrepagella-italic.otf) format('opentype');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(fonts/texgyrepagella-bolditalic.otf) format('opentype');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+/*
+*  Academicons 1.8.0 by James Walsh - https://github.com/jpswalsh
+*  Fonts generated using the IcoMoon app - http://icomoon.io/app
+*  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
+*  Licenses - Font: SIL OFL 1.1, CSS: MIT License
+*/
+@font-face {
+  font-family: 'Academicons';
+  src: url(fonts/academicons.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: #07889b;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #e37222;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+}
+
+a {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+strong {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+}
+
+heading {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 22px;
+  color: #e37222;
+}
+
+heading2 {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+}
+
+papertitle {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+name {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 42px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
