@@ -1,3 +1,3 @@
 # vdasu.github.io
 
-Source code for personal website.
+Source code for personal website: https://vdasu.github.io/
