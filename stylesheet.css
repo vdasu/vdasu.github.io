@@ -120,3 +120,23 @@ li:not(:last-child) {
 span.highlight {
   background-color: #ffffd0;
 }
+
+#pub-list:not(.expanded) tr.pub-more {
+  display: none;
+}
+
+#pub-toggle {
+  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+  color: #07889b;
+  background: none;
+  border: 1px solid #07889b;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+#pub-toggle:hover {
+  color: #e37222;
+  border-color: #e37222;
+}

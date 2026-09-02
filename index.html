@@ -202,7 +202,7 @@
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+            <tbody id="pub-list">
               <td style="padding-left:20px;">
                 <heading>Publications (Selected)</heading>
               </td>
@@ -213,6 +213,34 @@
                 </td>
               </tr>
 
+              <tr>
+                <td colspan="2" style="padding-left:20px;">
+                  <button id="pub-toggle" onclick="togglePubs()">Show all publications ▾</button>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/siva_ccs.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2602.08136">
+                    <papertitle>Robustness of Vision Language Models Against Split-Image Harmful Input Attacks
+                    </papertitle>
+                  </a>
+                  <br>
+                  Md Rafi ur Rashid, Md Sadik Hossain Shanto, <b>Vishnu Asutosh Dasu</b>, Shagufta Mehnaz
+                  <br>
+                  <em>ACM Conference on Computer and Communications Security (CCS), 2026</em>
+                  <br>
+                  <p>
+                    Modern Vision-Language Models (VLMs) are robust to visual jailbreaks that use single, holistic images, but their safety alignment does not account for harmful semantics that are distributed across multiple image fragments. We introduce split-image visual jailbreak attacks (SIVA) that exploit this misalignment, evolving from naive splitting to an adaptive white-box attack and culminating in a black-box transfer attack powered by a novel adversarial knowledge distillation (Adv-KD) algorithm. Across four state-of-the-art VLMs and three jailbreak datasets, our strongest attack achieves up to 44% higher transfer success than existing baselines, and we propose efficient ways to address this vulnerability in VLM safety alignment.
+                  </p>
+                </td>
+              </tr>
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -315,7 +343,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/llm_defense.png' width="160">
@@ -338,7 +366,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/fltrojan.png' width="160">
@@ -365,7 +393,7 @@
                 </td>
               </tr>
 
-               <tr>
+               <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/dlsp_dedup.png' width="160">
@@ -388,7 +416,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/evoquerbot.png' width="160">
@@ -416,7 +444,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/new_results_ml.png' width="160">
@@ -445,7 +473,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/provfl.png' width="160">
@@ -472,7 +500,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/sca_pic.png' width="160">
@@ -501,7 +529,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/indocrypt_bp.png' width="160">
@@ -627,7 +655,7 @@
                 </td>
               </tr>  -->
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/aes_mc_silc.png' width="160">
@@ -652,7 +680,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/lighter-r.png' width="160">
@@ -676,7 +704,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="pub-more">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/re_ganspace.jpg' width="160">
@@ -708,6 +736,17 @@
 
             </tbody>
           </table>
+
+          <script>
+            function togglePubs() {
+              var list = document.getElementById('pub-list');
+              var btn = document.getElementById('pub-toggle');
+              list.classList.toggle('expanded');
+              btn.textContent = list.classList.contains('expanded')
+                ? 'Show top conference papers only ▴'
+                : 'Show all publications ▾';
+            }
+          </script>
 
           <table width="100%" align="center" border="0" cellspacing="0">
             <tbody>
